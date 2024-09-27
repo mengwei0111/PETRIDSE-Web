@@ -1,0 +1,48 @@
+<header class="relative bg-[#E9C46A] h-100 w-full">
+    <div class="relative z-20">
+      <div class="flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+        <div>
+          <a href="index.html" class="flex">
+            <img class="h-[100px]" src="./img/LOGO.png" alt="LOGO">
+          </a>
+        </div>
+        <div class="md:flex-1 md:flex md:items-start md:justify-between">
+          <label for="menu" class="absolute right-[10px] lg:hidden cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </label>
+
+          <input id="menu" class="hidden" type="checkbox">
+          <nav
+            class="hidden  w-full bg-white bg-opacity-90 lg:bg-transparent lg:block lg:static top-[120px]  lg:w-auto space-x-10 left-0 absolute">
+            <ul class="flex flex-col lg:flex-row gap-[20px] text-center">
+              <li><a class="block py-[10px] hover:text-gray-900" href="index.html">首頁</a></li>
+              <li><a class="block py-[10px] hover:text-gray-900" href="news.html">最新消息</a></li>
+              <li><a class="block py-[10px] hover:text-gray-900" href="services.html">服務導覽</a></li>
+              <li><a class="block py-[10px] hover:text-gray-900" href="products.html">商品導覽</a></li>
+              <li><a class="block py-[10px] hover:text-gray-900" href="login.html">會員中心</a></li>
+            </ul>
+          </nav>
+          <div class="ml-auto flex items-center space-x-3 login-search-container">
+            <a href="search.html">
+            <button  class="flex items-center">
+              <svg width="24" height="24" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.6"
+                  d="M33.25 33.25L26.3625 26.3625M30.0833 17.4167C30.0833 24.4123 24.4123 30.0833 17.4167 30.0833C10.4211 30.0833 4.75 24.4123 4.75 17.4167C4.75 10.4211 10.4211 4.75 17.4167 4.75C24.4123 4.75 30.0833 10.4211 30.0833 17.4167Z"
+                  stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+              </a>
+            <button>
+              <a href="login.html"
+                class="flex items-center text-base font-medium mr-6 h-[38px] w-auto px-6 py-4 rounded-lg bg-[#F4A261] text-white hover:text-gray-900 shadow-md">登入/註冊</a>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>

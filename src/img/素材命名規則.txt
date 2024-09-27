@@ -1,0 +1,23 @@
+4icon-->四個小圖標
+billboard-->頁面公告欄
+cart icon-->購物車icon
+certification-->認證
+chat-->聊聊
+colors-->配色
+find products-->找商品
+find services-->找服務
+footpoint-->腳印
+goods1~6-->6張貓砂圖
+login-lb-->登入頁左下
+login-lt-->登入頁左上
+login-rt-->登入頁右上
+login-rb-->登入頁右下
+LOGO-->首頁LOGO
+score-->評價星星
+score-star-->評價星星*1
+search-lb-->搜尋頁左下
+search-lt-->搜尋頁左上
+search-rb-->搜尋頁右下
+search-rt-->搜尋頁右上
+service1-4-->找服務找商品背景幾何圖
+service-bg-->找服務找商品背景圖

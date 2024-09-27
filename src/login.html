@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PETRADISE寵物樂緣</title>
+
+  <meta name="description" content="this is PETRADISE ">
+  <meta property="og:title" content="PETRADISE寵物樂緣">
+  <meta property="og:description" content="this is PETRADISE ">
+  <meta property="og:image" content="https://petradise-317e0.web.app/LOGO.png">
+  <meta property="og:url" content="https://petradise-317e0.web.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PETRADISE寵物樂緣">
+  <meta property="og:locale" content="zh-TW" />
+  <link rel="canonical" href="https://petradise-317e0.web.app/">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="scss/main.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8ZGC72W30"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8ZGC72W30');
+</script>
+<style>
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .swiper-slide img {
+      width: 60%;
+      height: 100%;
+      justify-items: center;
+      align-items: center;
+      object-fit: contain;
+      margin-top:40px ;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F4A261] h-[100svh] w-full flex items-center justify-center">
+    <!-- background start-->
+  <img class="h-[20%] md:h-[20%] absolute left-0 top-0" src="./img/login-lt.svg" alt="">
+  <img class="h-[20%] md:h-[30%] absolute right-0 top-0" src="./img/login-rt.svg" alt="">
+  <img class="h-[20%] md:h-[40%] absolute left-0 bottom-0" src="./img/login-lb.svg" alt="">
+  <img class="h-[20%] md:h-[20%] absolute right-0 bottom-0" src="./img/login-rb.svg" alt="">
+
+    <!-- background end-->
+    <!-- navbar start-->
+    <nav class="absolute top-0 left-0 md:fixed m-2 z-10">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center ">
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              
+              <div class="flex-shrink-0 flex items-center">
+                <a href="index.html">
+                <img class="h-[80px] w-auto" src="./img/LOGO.png" alt="LOGO">
+                </a>
+              </div>
+              
+              <div class=" h-[80px] sm:ml-6">
+                <div class="md:flex h-full space-x-4 items-center hidden">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="index.html" class="text-black px-3 py-2 rounded-md text-base font-semibold " aria-current="page">首頁</a>
+      
+                  <a href="news.html" class="text-gray-700 px-3 py-2 rounded-md text-base  font-medium">最新消息</a>
+      
+                  <a href="services.html" class="text-gray-700 px-3 py-2 rounded-md text-base  font-medium">服務瀏覽</a>
+      
+                  <a href="products.html" class="text-gray-700   px-3 py-2 rounded-md text-base  font-medium">商品瀏覽</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      
+        
+      </nav>
+    <!-- navbar end-->
+
+  <!-- login start-->
+  <div class="flex bg-[#f6f4f475] -translate-x-[50%] -translate-y-[50%] border border-[#00000025] shadow-md absolute left-[50%] top-[50%]  w-[80%] lg:w-[60%]  rounded-[20px]  py-5 px-4 sm:px-6 lg:px-8 justify-center">
+    <div class="flex flex-col md:flex-row items-center justify-center w-[80%] md:w-full">
+    <form class=" space-y-4 h-auto md:w-1/2 flex justify-center items-center flex-col" action="#" method="POST">
+      <h2 class="text-center text-3xl font-extrabold text-[#264653] py-4">會員登入</h2>
+        <input type="hidden" name="remember" value="true">
+        <div class="w-[80%] rounded-md shadow-sm">
+          <div>
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" required class="shadow-lg appearance-none h-[40px] rounded-[20px] relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="帳號/電子信箱">
+          </div>
+          <div class="mt-3">
+            <label for="password" class="sr-only">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required class="shadow-lg sha appearance-none h-[40px] rounded-[20px] relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="密碼">
+          </div>
+        </div>
+  
+        <div class="w-full flex items-center justify-around">
+          <div class="flex items-center">
+            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-[#979797] focus:ring-[#F4A261] border-[#F4A261] rounded">
+            <label for="remember-me" class="ml-2 block text-sm text-[#979797]"> 記住我 </label>
+          </div>
+  
+          <div class="text-sm flex items-center justify-center px-2">
+            <a href="#" class="p-3 font-medium text-[#979797] hover:text-indigo-500"> 註冊帳號 </a>
+            <button type="submit" class=" group relative w-[90px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-[20px] text-white bg-[#F4A261] hover:bg-[#ed9145] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                登入
+              </button>
+          </div>
+        </div>
+<div class=" text-[#264653] ">
+  用以下方式登入
+</div>
+<div class="flex">
+  <button type="button" class=" text-nowrap mt-3 mx-5 md:w-[80%]  flex justify-center py-2 px-4 border border-transparent text-lg font-bold rounded-md text-white bg-[#1877F2] hover:bg-[#1856f2]  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1877F2]">
+    <div class="flex justify-around">
+      <!-- Heroicon name: solid/lock-closed -->
+        <svg class="h-6 text-white"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
+            </svg>            
+  </div>
+  </button>
+  <button type="button" class=" text-nowrap mx-5  mt-3 md:w-[80%]  flex justify-center py-2 px-4 border border-transparent text-lg font-bold rounded-md text-gray-700 bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+    <div class="flex justify-around">
+      <!-- Heroicon name: solid/lock-closed -->
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+        <path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12 s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20 s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039 l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36 c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571 c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+        </svg>         
+  </div>
+  </button>
+  <button type="button" class="mx-5 text-nowrap mt-3 md:w-[80%]  flex justify-center py-2 px-4 border border-transparent text-lg font-bold rounded-md  text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">           
+      <!-- Heroicon name: solid/lock-closed -->
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.52734,34.75c-1.07812,2.39453 -1.59766,3.46484 -2.98437,5.57813c-1.94141,2.95313 -4.67969,6.64063 -8.0625,6.66406c-3.01172,0.02734 -3.78906,-1.96484 -7.87891,-1.92969c-4.08594,0.01953 -4.9375,1.96875 -7.95312,1.9375c-3.38672,-0.03125 -5.97656,-3.35156 -7.91797,-6.30078c-5.42969,-8.26953 -6.00391,-17.96484 -2.64844,-23.12109c2.375,-3.65625 6.12891,-5.80469 9.65625,-5.80469c3.59375,0 5.85156,1.97266 8.82031,1.97266c2.88281,0 4.63672,-1.97656 8.79297,-1.97656c3.14063,0 6.46094,1.71094 8.83594,4.66406c-7.76562,4.25781 -6.50391,15.34766 1.33984,18.31641zM31.19531,8.46875c1.51172,-1.94141 2.66016,-4.67969 2.24219,-7.46875c-2.46484,0.16797 -5.34766,1.74219 -7.03125,3.78125c-1.52734,1.85938 -2.79297,4.61719 -2.30078,7.28516c2.69141,0.08594 5.47656,-1.51953 7.08984,-3.59766z"></path></g></g>
+        </svg>       
+  </button>
+</div>  
+    </form>
+      <!-- 右側商品輪播圖 -->
+      <div class="w-full md:w-1/2 aspect-square mt-5 md:mt-0">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide ">
+              <div class="absolute top-0">
+                90%纖維絲蘭豆腐沙(6L/包)
+              </div>
+              <img src="/img/goods2.png" alt="" style="height: 80%;">
+            </div>
+            
+            <div class="swiper-slide ">              
+            <div class="absolute top-0">
+                臭味滾1.5MM極細豆腐沙
+              </div>
+              <img src="/img/goods3.png" alt="" style="height: 80%;">
+            </div>
+            
+            <div class="swiper-slide">              
+              <div class="absolute top-0">
+                有機凝結杉木貓砂10L/4.3kg3包組
+              </div>
+              <img src="/img/goods4.png" alt="" style="height: 80%;">
+            </div>
+
+            <div class="swiper-slide">
+              <div class="absolute top-0">
+                台灣首選100%純松木顆粒沙
+              </div>
+              <img src="/img/goods5.png" alt="" style="height: 80%;">
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="absolute top-0">
+                五吉貓純豆腐沙 蘋果木 2.5KG
+              </div>
+              <img src="/img/goods6.png" alt="" style="height: 80%;">
+            </div>
+          </div>
+          
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login end-->
+</body>
+<script>
+
+var swiper = new Swiper(".mySwiper", {     
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
+</html>

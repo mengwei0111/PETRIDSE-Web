@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PKLNH04K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5PKLNH04K0');
+</script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link Tailwind's CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/full.min.css" rel="stylesheet" type="text/css" />
+   
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    
+    <title>Dongdooooong</title>
+
+    <meta property="og:description" content="test">
+
+    <meta property="og:title" content="Dongdooooong">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dongdooooong.web.app/search.html">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="test">
+    <meta property="og:locale" content="zh_TW">
+
+    <link rel="canonical" href="https://dongdooooong.web.app/search.html">
+  
+  <link rel="stylesheet" crossorigin href="./assets/main-BcszZQWg.css">
+</head>
+<!--/search-點選輸入框會彈出搜尋建議 -->
+<style>
+    .search_result {
+        display: none;
+        transition: all .6s ease-in;
+    }
+    input:focus + .search_result {
+        display: block;
+    }
+</style>
+<body>
+  <!-- menu -->
+    <nav class="absolute top-0 left-[40%] sm:left-4 z-40">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              
+              <div class="flex justify-center sm:flex-shrink-0  sm:items-center">
+                <a href="index.html">
+                  <img class="h-[60px]" src="./assets/LOGO-BDY7c3-H.png" alt="Patradise">
+                </a> 
+              </div>
+               
+              <div class="hidden h-[80px] sm:block sm:ml-6">
+                <div class="flex h-full space-x-4 items-center">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="index.html" class="text-black px-3 py-2 rounded-md text-base font-semibold " aria-current="page">首頁</a>
+      
+                  <a href="news.html" class="text-gray-700 px-3 py-2 rounded-md text-base  font-medium">最新消息</a>
+      
+                  <a href="services.html" class="text-gray-700 px-3 py-2 rounded-md text-base  font-medium">服務瀏覽</a>
+      
+                  <a href="products.html" class="text-gray-700   px-3 py-2 rounded-md text-base  font-medium">商品瀏覽</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- 背景區塊 -->
+    <div class="h-screen relative w-full md:h-screen bg-[#FFF7F0]">
+    <!-- 背景四小塊圖片 -->
+    <div>
+      <img class="w-[40%] md:w-[20%] absolute top-0 left-0" src="data:image/svg+xml,%3csvg%20width='388'%20height='245'%20viewBox='0%200%20388%20245'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M350.701%20116.696C403.105%2092.8678%20393.43%2023.8279%20363.601%200H0V245C76.8036%20205.287%2070.3539%20175.349%2076.8036%20147.855C83.2533%20120.362%20126.575%2091.7015%20216.87%20122.805C243.475%20131.97%20298.297%20147.855%20350.701%20116.696Z'%20fill='%23FFCA40'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="左上幾何">
+      <img class="w-[40%] md:w-[20%] absolute top-0 right-0" src="data:image/svg+xml,%3csvg%20width='200'%20height='209'%20viewBox='0%200%20200%20209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.5655%20109.08C-3.5315%2092.7164%20-7.23281%2067.873%2022.4599%2025.1142C52.1526%20-17.6446%2035.5756%20-32.9001%2053.5268%20-66.1122C88.1439%20-130.214%20146.209%20-78.6056%20160.966%20-52.8928C185.84%20-9.54344%20246.297%2017.718%20258.133%2069.1695C269.515%20118.663%20223.021%20198.843%20163.743%20207.304C130.301%20212.073%20112.27%20198.766%2098.7735%20159.352C83.0723%20113.503%2044.2832%20135.952%2014.5655%20109.08Z'%20fill='%2392B1EB'/%3e%3c/svg%3e" alt="右上幾何">
+      <img class="w-[40%] md:w-[20%] absolute bottom-0 left-0" src="data:image/svg+xml,%3csvg%20width='177'%20height='217'%20viewBox='0%200%20177%20217'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M39.7033%20238.808C9.43585%20246.963%20-4.98754%20243.202%20-19.167%20223.453C-48.7437%20182.261%20-14.7233%20117.082%20-1.45274%2074.2518C8.79831%2041.1727%2024.3576%202.97285%2064.328%200.629588C109.305%20-2.01619%20148.124%2048.0496%20133.331%2089.6945C122.717%20119.559%20125.199%20128.568%20150.504%20152.017C178.619%20178.068%20183.482%20195.917%20168.344%20217.5C156.392%20234.551%20136.259%20239.177%20116.717%20236.422C72.3797%20230.172%2071.6749%20230.192%2039.7033%20238.808Z'%20fill='%23FFB982'/%3e%3c/svg%3e" alt="左下幾何">
+      <img class="w-[40%] md:w-[20%] absolute bottom-0 right-0" src="data:image/svg+xml,%3csvg%20width='567'%20height='264'%20viewBox='0%200%20567%20264'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M567%20264H68.1692C31.6268%20255.842%20-29.8136%20229.137%2016.7649%20187.581C51.2535%20156.811%2093.6563%20156.361%20145.281%20155.812C180.809%20155.434%20220.704%20155.01%20265.394%20144.626C322.198%20131.427%20314.361%20109.914%20305.369%2085.2288C297.007%2062.2731%20287.646%2036.5741%20328.337%2012.2666C395.897%20-28.0906%20515.596%2040.7365%20567%2080.1947V264Z'%20fill='%23FFCA40'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="右下幾何">
+    </div>
+    <!-- 搜尋區塊 -->
+    <div class="relative flex justify-center pt-[60px]">
+      <!-- 搜尋框和圖標 -->
+      <div class="w-[80%] relative">
+        <!-- 輸入框 -->
+        <input class="w-full h-[50px] pl-12 pr-10 border-0 bg-white rounded-full z-30 focus:outline-none focus:border-transparent focus:ring-0" placeholder="請輸入文字...." type="text">
+        <!-- 搜尋建議 -->
+        <div class="search_result absolute top-[60px] w-full h-[200px] md:h-[300px] bg-white">
+        </div>
+        <!-- 放大鏡圖片 -->
+        <div class="absolute inset-y-0 left-4 flex items-center">
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+              <path d="M42 42L33.3 33.3M38 22C38 30.8366 30.8366 38 22 38C13.1634 38 6 30.8366 6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22Z" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>
+        <!-- 取消鍵 -->
+        <div class="absolute inset-y-0 right-4 flex items-center">
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.7" d="M30 18L18 30M18 18L30 30M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 4 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

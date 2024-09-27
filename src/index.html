@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PETRADISE寵物樂緣</title>
+
+
+  <meta name="description" content="this is PETRADISE ">
+
+  <meta property="og:title" content="PETRADISE寵物樂緣">
+  <meta property="og:description" content="this is PETRADISE ">
+  <meta property="og:image" content="https://petradise-317e0.web.app/meta_banner.png">
+  <meta property="og:url" content="https://petradise-317e0.web.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PETRADISE寵物樂緣">
+  <meta property="og:locale" content="zh-TW" />
+  <link rel="canonical" href="https://petradise-317e0.web.app/">
+
+  <link rel="stylesheet" href="scss/main.scss">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8ZGC72W30"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W8ZGC72W30');
+  </script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <%- include("include/header")%>
+
+    <!-- Header End -->
+
+    <!-- Swiper -->
+    <div class="swiper bg-[#F1EBE1] mySwiper w-full">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="products.html">
+          <img src="./img/banner1.svg" alt="Banner 1" class="w-full h-auto object-cover">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="products.html">
+          <img src="./img/banner2.svg" alt="Banner 2" class="w-full h-auto object-cover">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="products.html">
+          <img src="./img/banner3.svg" alt="Banner 3" class="w-full h-auto object-cover">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- 找服務找商品 -->
+    <div class="relative flex">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle2 circle-a"></div>
+      <div class="circle2 circle-b"></div>
+  
+      <div  class="flex justify-center items-center relative w-full h-[500px] bg-[#FFF7F0]">
+        <div class=" absolute top-1/2 transform -translate-y-1/2 flex space-x-32">
+          <button class="_animate-btn-click">
+            <a href="products.html"><img src="./img/findproducts2.png" alt="首頁找商品選項"></a>
+          </button>
+          <button>
+            <a href="services.html"><img src="./img/findservices2.png" alt="首頁找服務選項"></a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 找服務找商品 end -->
+
+    <!-- 第一張卡片 -->
+    <div class="bg-white w-full mx-auto">
+      <div class="flex flex-col justify-center items-center py-4 bg-white">
+        <img src="./img/LOGO.png" alt="LOGO" class="h-[100px]">
+        <span class="text-[20px] mt-4 text-center">
+          Petradise寵物樂緣 致力於為小夥伴們提供<br>
+          優質、安全、全方位的產品 <br>
+          我們不只產品，也有優質商家周邊服務 <br>
+          你想要的這裡應有盡有
+        </span>
+      </div>
+      
+      <div class="mt-8 flex flex-wrap justify-center">
+        <% for (var i = 0; i < 3; i++) { %> 
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
+            <div class="relative flex flex-col items-center text-center p-6 border border-orange-200 rounded-lg">
+              <div class="mb-4">
+                <img src="./img/certification-1.png" alt="認證圖標" class="w-auto h-auto ">
+              </div>
+              <h3 class="text-[20px] font-bold mb-2 pb-6">商品嚴格把關</h3>
+              <p class="text-[14px] w-[216px]">
+                我們不只要您的小夥伴吃得好、也要吃得健康。因此Petradise嚴格把關上架食品，讓飼主們買的放心、小夥伴們吃得安心。
+              </p>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>    
+    <!-- 精選預覽 -->
+    <div class="relative ">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle2 circle-a"></div>
+    <div class="circle2 circle-b"></div>
+
+
+    <div class=" max-w-md mx-auto mt-4">
+      
+
+      <h1 class="text-2xl font-bold text-center text-gray-700 mb-4">精選預覽</h1>
+      <div class="flex rounded-full overflow-hidden">
+        <div class="w-full flex justify-center">    
+          <div role="tablist" class="tabs">
+          <input type="radio" name="my_tabs" id="tab1" class="tab" checked>
+          <label for="tab1" class="tab-label"><a href="products.html">商品</a></label>
+          
+          <input type="radio" name="my_tabs" id="tab2" class="tab">
+          <label for="tab2" class="tab-label"><a href="services.html">服務</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center mx-auto max-w-screen-lg px-4 mb-5 ">
+      <div class="w-full  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16  ">
+        <!-- 6cards -->
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+        <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods1.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+            <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods2.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+            <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods3.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+            <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods4.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+            <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods5.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full col-span-1 flex justify-center mt-[38px]">
+          <div class="rounded-[32px] bg-[#FEE6C3] p-4 w-full">
+            <!-- img -->
+            <div class="w-full rounded-[20px] bg-white relative pb-[100%]">
+              <img src="./img/goods6.png" alt=""
+                class="absolute inset-0 w-full h-full object-contain rounded-[20px]">
+              <button id="heartOn" onclick="changeType()" class="hidden absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
+                  <path
+                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                </svg>
+              </button>
+              <button id="heartOff" onclick="changeType()" class="absolute right-4 top-3 text-[#F4A261]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-[30px] w-[30px]">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </button>
+            </div>
+            <!-- name -->
+            <h1 class="text-lg font-bold mt-2 ml-1">商品名稱</h1>
+            <div class="md:flex md:justify-between items-center mt-5 mb-3 ml-2">
+              <p class="text-xl text-[#FF7000] font-bold">$70</p>
+              <button class="bg-[#F4A261] text-white rounded-full py-2 text-xs px-4">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <a href="products.html">
+        <button
+          class="bg-[#F4A261] text-white rounded-full py-2 text-xl md:text-xs px-4 mt-[26px] md:w-[102px] md:h-[35px] w-[200px] h-[50px]">
+          查看更多
+        </button>
+      </a>
+    </div>
+    </div>
+    <!-- 6cards end -->
+
+
+    <!-- 合作商家 -->
+
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div class="w-full px-4 py-20 h-auto lg:px-40">
+        <h1 class="text-3xl font-semibold text-center mb-8">合作商家</h1>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 h-[80%]">
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop1.png" alt="Logo 1" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-2 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop2.png" alt="Logo 2" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop3.png" alt="Logo 3" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop4.png" alt="Logo 4" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop5.png" alt="Logo 5" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop6.png" alt="Logo 6" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop7.png" alt="Logo 7" class="object-contain">
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center h-full">
+            <div class="bg-white p-6 rounded-lg shadow-md w-full h-full flex items-center justify-center aspect-square">
+              <img src="./img/shop8.png" alt="Logo 8" class="object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  用戶回饋-->
+    <div class="relative bg-[#FFF7F0] pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="absolute inset-0">
+        <div class="bg-[#FFF7F0] h-1/3 sm:h-2/3"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">用戶回饋</h2>
+        </div>
+        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover " src="./img/goods6.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="">
+                  <img src="./img/score.svg" alt="評價星星">
+                </div>
+                <a href="#" class="block mt-2">
+                  <p class="text-xl font-semibold text-gray-900">topic</p>
+                  <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">Roel Aufderehar</span>
+                    <img class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt="">
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-gray-900">
+                    <a href="#" class="hover:underline"> Roel Aufderehar </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover " src="./img/goods6.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div>
+                  <img src="./img/score.svg" alt="評價星星">
+                </div>
+                <a href="#" class="block mt-2">
+                  <p class="text-xl font-semibold text-gray-900">topic</p>
+                  <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio
+                    animi., tempore temporibus quo laudantium.</p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">Brenna Goyette</span>
+                    <img class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt="">
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-gray-900">
+                    <a href="#" class="hover:underline"> Brenna Goyette </a>
+                  </p>
+                  <div class="flex space-x-1 text-sm text-gray-500">
+                    <time datetime="2020-03-10"> Mar 10, 2020 </time>
+                    <span aria-hidden="true"> &middot; </span>
+                    <span> 4 min read </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover " src="./img/goods6.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="text-sm font-medium text-indigo-600">
+                  <img src="./img/score.svg" alt="評價星星">
+                </div>
+                <a href="#" class="block mt-2">
+                  <p class="text-xl font-semibold text-gray-900">topic</p>
+                  <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
+                    perferendis hic.</p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">Daniela Metz</span>
+                    <img class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt="">
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-gray-900">
+                    <a href="#" class="hover:underline"> Daniela Metz </a>
+                  </p>
+                  <div class="flex space-x-1 text-sm text-gray-500">
+                    <time datetime="2020-02-12"> Feb 12, 2020 </time>
+                    <span aria-hidden="true"> &middot; </span>
+                    <span> 11 min read </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("include/right_button")%>
+
+    
+    
+
+    <%- include("include/footer")%>
+
+      <script>
+
+        function changeType() {
+          const heartOn = document.getElementById('heartOn');
+          const heartOff = document.getElementById('heartOff');
+          // pwd.type = pwd.type =='text' ? 'password' : 'text';
+          if (heartOn.style.display == 'block') {
+            heartOn.style.display = 'none';
+            heartOff.style.display = 'block';
+          }
+          else {
+            heartOn.style.display = 'block';
+            heartOff.style.display = 'none';
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+              },
+            },
+          });
+        });
+
+        // 當用戶滾動時顯示或隱藏按鈕
+  window.onscroll = function() {
+    var scrollToTopButton = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  };
+
+  // 點擊按鈕時滾動到頂部
+  document.getElementById("scrollToTop").onclick = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+
+      </script>
+
+
+<script src="./js/main.js"></script>
+
+</body>
+
+
+
+</html>
